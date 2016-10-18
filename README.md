@@ -1,2 +1,2 @@
 # ansible-role-os-update
-Ansible role that upgrades CentOS 7.
+Ansible role that updates CentOS 7.
