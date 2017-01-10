@@ -1,2 +1,2 @@
 # ansible-role-os-update
-Ansible role that updates CentOS 7.
+Ansible role for updating OS (Fedora/CentOS 7).
