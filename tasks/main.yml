@@ -1,7 +1,2 @@
 ---
-- name: update all packages in Fedora
-  dnf: name=* state=latest
-  when: ansible_distribution == "Fedora"
-- name: update all packages in CentOS
-  yum: name=* state=latest
-  when: ansible_distribution == "CentOS"
+- include: update-{{ ansible_distribution | lower }}.yml
