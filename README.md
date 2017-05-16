@@ -3,7 +3,7 @@ os-update
 
 Ansible role for updating OS.
 
-It uses `package` module to abstract away discrepancy between `yum` and `dnf` in RedHat-based distributions and ordinary `apt` module in distributions based on Debian.
+It uses `package` module to abstract away discrepancy between `yum` and `dnf` package managers in RedHat-based distributions and ordinary `apt` module in distributions based on Debian.
 
 Requirements
 ------------
