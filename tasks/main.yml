@@ -1,2 +1,2 @@
 ---
-- include: update-{{ ansible_distribution | lower }}.yml
+# tasks file for os-update
