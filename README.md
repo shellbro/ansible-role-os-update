@@ -1,4 +1,4 @@
-Role Name
+os-update
 =========
 
 Ansible role for updating OS.
