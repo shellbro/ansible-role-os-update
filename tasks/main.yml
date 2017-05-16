@@ -1,2 +1,3 @@
 ---
-# tasks file for os-update
+- include: update-{{ ansible_os_family | lower }}.yml
+
