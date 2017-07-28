@@ -27,7 +27,7 @@ Example Playbook
       hosts: all
       serial: 1
       roles:
-         - shellbro.os-update
+        - shellbro.os-update
 
 License
 -------
