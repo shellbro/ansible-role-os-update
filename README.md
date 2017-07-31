@@ -1,7 +1,7 @@
 os-update
 =========
 
-Ansible role for updating OS.
+Ansible role for updating OS (RedHat, Debian).
 
 It uses `package` module to abstract away discrepancy between `yum` and `dnf` package managers in RedHat-based distributions and ordinary `apt` module in distributions based on Debian.
 
