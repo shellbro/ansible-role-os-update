@@ -23,8 +23,7 @@ None
 Example Playbook
 ----------------
 
-    - name: apply updates
-      hosts: all
+    - hosts: servers
       serial: 1
       roles:
         - shellbro.os-update
