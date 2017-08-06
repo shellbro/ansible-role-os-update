@@ -1,4 +1,4 @@
 ---
 - hosts: all
   roles:
-    - role: shellbro.os-update
+    - shellbro.os-update
