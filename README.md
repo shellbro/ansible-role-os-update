@@ -8,7 +8,7 @@ It uses `package` module to abstract away discrepancy between `yum` and `dnf` pa
 Requirements
 ------------
 
-Ansible version >= 2.0.0.
+Ansible version >= 2.0.
 
 Role Variables
 --------------
