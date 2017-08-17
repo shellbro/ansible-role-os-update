@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.define "centos" do |centos|
     centos.vm.box = "centos/7"
+    centos.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   config.vm.define "fedora" do |fedora|
@@ -10,6 +11,7 @@ Vagrant.configure("2") do |config|
     fedora.vm.provision "shell" do |s|
       s.inline = "dnf -y install python python2-dnf libselinux-python"
     end
+    fedora.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   config.vm.define "debian" do |debian|
@@ -18,5 +20,6 @@ Vagrant.configure("2") do |config|
       a.limit = "all"
       a.playbook = "tests/test-vagrant.yml"
     end
+    debian.vm.synced_folder ".", "/vagrant", disabled: true
   end
 end
