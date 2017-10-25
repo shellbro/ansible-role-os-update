@@ -1,3 +1,2 @@
 ---
-- include: update-{{ ansible_os_family | lower }}.yml
-
+- include_tasks: update-{{ ansible_os_family | lower }}.yml
