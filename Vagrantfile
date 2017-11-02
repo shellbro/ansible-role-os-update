@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     debian.vm.box = "debian/jessie64"
     debian.vm.provision "ansible" do |a|
       a.limit = "all"
-      a.playbook = "tests/test-vagrant.yml"
+      a.playbook = "tests/test.yml"
     end
     debian.vm.synced_folder ".", "/vagrant", disabled: true
   end
