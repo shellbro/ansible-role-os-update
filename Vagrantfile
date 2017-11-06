@@ -1,10 +1,5 @@
 Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false
-  
-  config.vm.define "centos" do |centos|
-    centos.vm.box = "centos/7"
-    centos.vm.synced_folder ".", "/vagrant", disabled: true
-  end
 
   config.vm.define "fedora" do |fedora|
     fedora.vm.box = "fedora/26-cloud-base"
@@ -12,6 +7,11 @@ Vagrant.configure("2") do |config|
       s.inline = "dnf -y install python python2-dnf libselinux-python"
     end
     fedora.vm.synced_folder ".", "/vagrant", disabled: true
+  end
+  
+  config.vm.define "centos" do |centos|
+    centos.vm.box = "centos/7"
+    centos.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   config.vm.define "debian" do |debian|
