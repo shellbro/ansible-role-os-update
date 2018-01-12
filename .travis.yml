@@ -1,8 +1,5 @@
 sudo: required
 
-services:
-  - docker
-
 env:
   - distribution: fedora
     version: 27
@@ -10,6 +7,9 @@ env:
     version: 7
   - distribution: debian
     version: jessie
+
+services:
+  - docker
 
 before_install:
   - 'sudo docker pull ${distribution}:${version}'
