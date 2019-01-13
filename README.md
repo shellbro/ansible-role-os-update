@@ -1,5 +1,5 @@
-os-update
-=========
+shellbro.os-update
+==================
 
 [![Build Status](https://travis-ci.org/shellbro/ansible-role-os-update.svg?branch=master)](https://travis-ci.org/shellbro/ansible-role-os-update)
 
