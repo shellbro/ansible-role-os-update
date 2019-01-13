@@ -1,6 +1,7 @@
 ---
+
 - name: update all packages
   package:
     name: '*'
     state: latest
-  become: yes
+  become: true

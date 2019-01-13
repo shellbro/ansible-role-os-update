@@ -1,5 +1,6 @@
 ---
+
 - name: update all packages
   apt:
     upgrade: dist
-  become: yes
+  become: true
